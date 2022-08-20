@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYSSCYVG35"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-EYSSCYVG35');
+  </script>
+
+  <!--CSS-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.processed.css" />
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <title>Decent Apps || Contact us</title>
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3aea44e36d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <img onclick="window.location.href='/'" src='./img/logo.png' alt="Decent Apps"></img>
+
+    <nav>
+      <a href="https://medium.com/@decent_apps/pi-webinars-9d24429dc0e1">Pi Webinars</a>
+      <a href="https://medium.com/@decent_apps/introducing-pi-ecard-b57180fe03dc">Pi eCard</a>
+      <a href="./jobs.html">Jobs</a>
+      <a href="./contact.html">Contact us</a>
+    </nav>
+
+    <div class="dropdown mobile">
+      <button class="dropbtn" onclick="document.getElementById('myDropdown').classList.toggle('show');">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="https://medium.com/@decent_apps/pi-webinars-9d24429dc0e1">Pi Webinars</a>
+        <a href="https://medium.com/@decent_apps/introducing-pi-ecard-b57180fe03dc">Pi eCard</a>
+        <a href="./jobs.html">Jobs</a>
+        <a href="./contact.html">Contact us</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="landing">
+    <div id="form"><br><br>
+      <h3>Contact us:</h3><br>
+      <input style="width: 100%; margin-bottom: 10px;" type="text" id="name" placeholder="Name">
+      <br>
+      <input style="width: 100%; margin-bottom: 10px;" type="text" id="email" placeholder="Email">
+      <br>
+      <input style="width: 100%; margin-bottom: 10px;" type="text" id="issue" placeholder="Issue">
+      <br>
+      <input style="width: 100%; height: 200px;" type="text" id="more" placeholder="Tell us more...">
+      <br>
+      <button id="contact" type="submit" value="Submit" onclick="contact()">Submit</button>
+      </form>
+    </div>
+  </div>
+
+    <script src="./js/contact.js"></script>
+
+</body>
+
+</html>

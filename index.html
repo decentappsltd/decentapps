@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<!--  
+Created by Decent Apps Ltd
+  => Oliver Crockett, oliver@decentapps.co.uk
+-->
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYSSCYVG35"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-EYSSCYVG35');
+  </script>
+
+  <!--CSS-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.processed.css" />
+  <link rel="icon" type="image/png" href="../img/logo.png">
+  <title>Decent Apps</title>
+  <meta name="description" content="Decent Apps Ltd is a UK Company, helping to build Web3 by creating dApps that run on the Pi Network™.">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3aea44e36d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <img onclick="window.location.href='/'" src='./img/logo.png' alt="Decent Apps"></img>
+
+    <nav>
+      <a href="https://medium.com/@decent_apps/pi-webinars-9d24429dc0e1">Pi Webinars</a>
+      <a href="https://medium.com/@decent_apps/introducing-pi-ecard-b57180fe03dc">Pi eCard</a>
+      <a href="./jobs.html">Jobs</a>
+      <a href="./contact.html">Contact us</a>
+    </nav>
+  
+    <div class="dropdown mobile">
+      <button class="dropbtn" onclick="document.getElementById('myDropdown').classList.toggle('show');">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="https://medium.com/@decent_apps/pi-webinars-9d24429dc0e1">Pi Webinars</a>
+        <a href="https://medium.com/@decent_apps/introducing-pi-ecard-b57180fe03dc">Pi eCard</a>
+        <a href="./jobs.html">Jobs</a>
+        <a href="./contact.html">Contact us</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="landing">
+    <div class="slideshow-container">
+
+      <div onclick="window.location = 'https://www.piwebinars.co.uk'" class="mySlides fade">
+        <img class="mobile" style="margin: auto; margin-top: 20px;" src="/img/piwebinars-mobile.png">
+        <img class="desktop" src="/img/piwebinars.png"><br>
+        <a>Pi Webinars</a>
+      </div>
+
+      <div onclick="window.location = 'https://www.piecard.app'" class="mySlides fade">
+        <img class="mobile" style="margin: auto; margin-top: 20px;" src="/img/piecard-mobile.png">
+        <img class="desktop" src="/img/piecard.png"><br>
+        <a>Pi eCard</a>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align: center; display: none;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+
+    <h2 id="pinetwork">dApps that run on the Pi Network™</h2>
+  </div>
+
+  <div id="main">
+    <div id="bg"></div>
+
+    <div id="content">
+      <h2>Pi Webinars</h2>
+      <span class="flex">
+        <span class="block">
+          <p2>The Honourable Mention winning app in the 2021 Pi Hackathon, where users can upload their webinar content and receive Pi everytime their presentation is viewed!</p2><br><br>
+          <img src="/img/webinarslogo.png">
+        </span>
+        <span class="block">
+          <span class="desktop"><img src="/img/decentralised.png"><br><br></span>
+          <p2>The first DeEd (Decentralised Education) webinar/video platform, to put the users in control their learning.</p2>
+          <span class="mobile"><img src="/img/decentralised.png"><br><br></span>
+        </span>
+        <span class="block">
+          <p2>Become a teacher and earn Pi every time your webinars are purchased, when you upload to piwebinars.co.uk</p2><br><br>
+          <img src="/img/wallet.png">
+        </span>
+      </span>
+
+      <h2>Pi eCard</h2>
+      <span class="flex">
+        <span class="block">
+          <p2>Pi eCard is the easy POS (Point of Sale) system for the Pi Network, enabling in-person vendors and Pioneers to invoice others without the need to type in long public keys.</p2><br><br>
+          <img src="/img/cardlogo.png">
+        </span>
+        <span class="block">
+          <span class="desktop"><img src="/img/status.png"><br><br></span>
+          <p2>The status of the payment can be seen at any stage by both the vendor and the client for clarity and peace of mind.</p2>
+          <span class="mobile"><img src="/img/status.png"><br><br></span>
+        </span>
+        <span class="block">
+          <p2>Pioneers can spend and send Pi at will, without risk or complex payment flows.</p2><br><br>
+          <img src="/img/payment.png">
+        </span>
+      </span>
+
+      <div id="footer" class="site-footer">
+        <div class="container">
+          <div class="row">
+              <ul class="footer-links">
+                <li><a href="https://www.piwebinars.co.uk">Pi Webinars</a></li>
+                <li><a href="https://piecard.app">Pi eCard</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+                <li><a href="./policies/privicy.html">Privacy Policy</a></li>
+                <li><a href="./policies/terms.html">Terms & Conditions</a></li>
+              </ul><br><br>
+            </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row"><br>
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by Decent Apps Ltd.
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="twitter" href="https://twitter.com/decentappsltd"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="facebook" href="https://www.facebook.com/Pi-Webinars-106614382056009"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/company/77668347"><i class="fa fa-linkedin"></i></a></li>
+                <li><a class="twitter" href="https://instagram.com/pi_webinars"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--Scripts-->
+  <script src="./js/scripts.js"></script>
+</body>
+
+</html>
