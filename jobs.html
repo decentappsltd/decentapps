@@ -6,17 +6,17 @@
   <!--CSS-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="../img/logo.png">
-  <link rel="stylesheet" href="./css/styles.processed.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
   <style>
     * {
       padding: 10px;
     }
 
     body {
-      background-color: #2b281f;
-      background-image: -webkit-radial-gradient(80% 80%, circle, #2b281f, transparent),
-        -webkit-radial-gradient(20% 10%, 30em 35em, #2b281f, transparent),
-        -webkit-radial-gradient(40% 100%, 20em 25em, #2b281f, transparent),
+      background-color: #030303;
+      background-image: -webkit-radial-gradient(80% 80%, circle, #030303, transparent),
+        -webkit-radial-gradient(20% 10%, 30em 35em, #030303, transparent),
+        -webkit-radial-gradient(40% 100%, 20em 25em, #030303, transparent),
         -webkit-radial-gradient(5% 70%, 50% 35em, #b44afb, transparent),
         -webkit-radial-gradient(90% 40%, 55% 25em, #fbb44a, transparent);
     }
@@ -27,47 +27,27 @@
       text-align: justify;
     }
 
+    p {
+      padding: 10px;
+    }
+
+    input {
+      padding: 10px;
+      border: solid 1px white;
+      border-radius: 5px;
+      background: none;
+      color: white;
+      margin-bottom: 20px;
+      display: block;
+    }
+
     .job {
       border: solid 1px;
       border-radius: 20px;
       padding: 10px;
       margin-bottom: 20px;
-    }
-
-    #header {
-      z-index: 4;
-      display: flex;
-      background-color: #2b281f;
-      color: white;
-      height: 60px;
-      padding: 10px;
-      border-bottom: solid 1px #2b281f;
-      position: fixed;
-      top: 0px;
-      left: 0px;
-      width: 100vw;
-    }
-
-    nav {
-      position: absolute;
-      right: 20px;
-      top: 25px;
-    }
-
-    a {
-      padding: 25px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    a:hover {
-      text-shadow: 0 0 7px #fff, 0 0 25px #b44afb;
-    }
-
-    img {
-      margin-left: 50px;
+      max-width: 600px;
+      margin: auto;
     }
 
     @media screen and (min-width: 620px) {
@@ -92,7 +72,7 @@
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -120,51 +100,55 @@
     </div>
   </div><br><br><br><br>
 
-  <h2>Current job openings:</h2><br>
+  <div style="max-width: 600px; margin: auto">
+    <h2>Current job openings:</h2><br>
 
-  <div class="job">
-    <h3>Javascript Developer</h3>
-    <p3>You need a proficiency in Javascript and either frontend or backend web development. You will be working along side our team of developers, creating one of the first of the next generation of web apps. You will be involved in the adding of new features and improvements to our app.</p3>
-    <form>
-      <label>What relevent skills or qualifications do you have?</label></br>
-      <input style="width: 90%; margin-bottom: 10px;" type="text" id="skills">
-      <br>
-      <label>What could you bring to Pi Webinars?</label></br>
-      <input style="width: 90%; margin-bottom: 10px;" type="text" id="statement">
-      <br>
-      <label>Please enter your email address:</label></br>
-      <input style="width: 90%;" type="text" id="email">
-      <br><br>
-      <button style="padding: 5px 15px;
+    <div class="job">
+      <h3>Javascript Developer</h3>
+      <p>You need a proficiency in Javascript and either frontend or backend web development. You will be working along
+        side our team of developers, creating one of the first of the next generation of web apps. You will be involved
+        in the adding of new features and improvements to our app.</p>
+      <form>
+        <label>What relevent skills or qualifications do you have?</label></br>
+        <input style="width: 90%; margin-bottom: 10px;" type="text" id="skills">
+        <br>
+        <label>What could you bring to Pi Webinars?</label></br>
+        <input style="width: 90%; margin-bottom: 10px;" type="text" id="statement">
+        <br>
+        <label>Please enter your email address:</label></br>
+        <input style="width: 90%;" type="text" id="email">
+        <br><br>
+        <button style="padding: 5px 15px;
   border: solid 2px white;
   font-weight: bold;
   color: white;
   background: none;" type="submit" value="Submit" onclick="developerJS()">Submit</button>
-    </form>
-  </div>
+      </form>
+    </div>
 
-  <div class="job">
-    <h3>Graphic Designer</h3>
-    <p3>You will be required to write about piwebinars.co.uk based on guides set by our team, in aid of marketing and promoting the app. Your work will be reviewed by the editors.</p3>
-    <form>
-      <label>What relevent skills or qualifications do you have?</label></br>
-      <input style="width: 90%; margin-bottom: 10px;" type="text" id="skills">
-      <br>
-      <label>What could you bring to Pi Webinars?</label></br>
-      <input style="width: 90%; margin-bottom: 10px;" type="text" id="statement">
-      <br>
-      <label>Please enter your email address:</label></br>
-      <input style="width: 90%;" type="text" id="email">
-      <br><br>
-      <button style="padding: 5px 15px;
+    <div class="job">
+      <h3>Graphic Designer</h3>
+      <p>You will be required to design social media graphics and in-app graphics for Pi Webinars and Pi eCard, based
+        on guides set by our team.</p>
+      <form>
+        <label>What relevent skills or qualifications do you have?</label></br>
+        <input style="width: 90%; margin-bottom: 10px;" type="text" id="skills">
+        <br>
+        <label>What could you bring to Pi Webinars?</label></br>
+        <input style="width: 90%; margin-bottom: 10px;" type="text" id="statement">
+        <br>
+        <label>Please enter your email address:</label></br>
+        <input style="width: 90%;" type="text" id="email">
+        <br><br>
+        <button style="padding: 5px 15px;
   border: solid 2px white;
   font-weight: bold;
   color: white;
   background: none;" type="submit" value="Submit" onclick="graphicDesigner()">Submit</button>
-    </form>
-  </div>
+      </form>
+    </div>
 
-  <!--    <div class="job">
+    <!--    <div class="job">
      <h3>Media and Public Relations</h3>
      <p3>You will work on interacting with customers, assisting with and finding creators of webinars, and working on our social media accounts.</p3>
      <form>
@@ -181,7 +165,9 @@
 </form>
    </div> -->
 
-  <h4>Enquiries contact: oliver@decentapps.co.uk</h4>
+    <h4>Enquiries contact: oliver@decentapps.co.uk</h4>
+
+  </div>
 
   <script>
     function contentEditing() {
